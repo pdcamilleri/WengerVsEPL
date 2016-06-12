@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Arsène Vs. EPL</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="js/handlebars.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
 
-    <div class="left">
+    <div class="left red-theme">
 
-        <table id="arseneTable">
+        <table id="wengerTable">
             <thead>
             <tr>
                 <th>Name</th>
@@ -21,12 +24,12 @@
             </thead>
         </table>
         <div class="image-medium">
-            <img src="images/WengerWinning.jpg">
-            <img hidden src="images/WengerLosing.jpg">
+            <img id="wengerWins" src="images/WengerWinning.jpg">
+            <img id="wengerLoses" hidden src="images/WengerLosing.jpg">
         </div>
     </div>
 
-    <div class="right">
+    <div class="right blue-theme">
         <table id="otherManagersTable">
             <thead>
                 <tr>
@@ -35,15 +38,47 @@
                     <!-- Add club icons #7-->
                     <!--<th>Club icon</th>-->
                     <th>Start date</th>
+                    <th>Days in charge</th>
                 </tr>
             </thead>
-
+            <tbody>
+                <!--populated using handlebars in main.js-->
+            </tbody>
+            <tfoot>
+            <!-- put the total days in here-->
+            </tfoot>
         </table>
         <div class="image-medium right">
-            <img id="eplMangersWinning" hidden src="images/EplManagersWinning.jpg">
-            <img id="eplMangersLosing" src="images/EplMangersLosing.jpg">
+            <img id="othersWin" hidden src="images/EplManagersWinning.jpg">
+            <img id="othersLose" src="images/EplMangersLosing.jpg">
         </div>
     </div>
+
+    <div class="center " id="result">
+        <p>
+            And the winner is <span>Arsene/EPL managers</span>
+        </p>
+        <p hidden>
+            <!-- Display the total number of days each at the bottom, underneath the "result",
+            until epl managers catch up with arsene.-->
+            <span id="daysUntilWengerLoses">???</span> EPL managers catch up.
+        </p>
+    </div>
+
+    <script id="hbTableRow" type="text/x-handlebars-template">
+        <div class="entry">
+            <tr>
+                <td>{{name}}</td>
+                <td>{{club}}</td>
+                <!-- Add club icons #7-->
+                <!--<th>Club icon</th>-->
+                <td>{{startDate}}</td>
+                <td>{{daysInCharge}}</td>
+            </tr>
+        </div>
+    </script>
+
+
 
 
 </body>
