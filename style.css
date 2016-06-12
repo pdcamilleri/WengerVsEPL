@@ -1,0 +1,20 @@
+.left {
+    position: absolute;
+    left: 0
+}
+
+.right {
+    position: absolute;
+    right: 0
+}
+
+/* Don't want the images to be any bigger than half the page. */
+.image-medium {
+    max-width: 45%;
+}
+
+/* Need to tell the images to be 100% the size of their parent. */
+/* Their parent should be one of the image-* classes, e.g. image-medium. */
+img {
+    max-width: 100%;
+}
