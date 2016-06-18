@@ -1,16 +1,61 @@
-.left {
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+html, body
+{
+    height: 100%;
+}
+
+header {
+    background-color: goldenrod;
+    color:white;
+    /*height: 20px;*/
+    /*position: relative;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+}
+
+footer {
+    background-color: goldenrod;
+    color:white;
+    bottom:0;
     position: absolute;
-    left: 0
+    width: 100%;
+}
+
+.container {
+    height:100%;
+    width:100%;
+    position:relative;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    float: left;
 }
 
 .right {
-    position: absolute;
-    right: 0
+    width: 50%;
+    height: 100%;
+    float: left;
 }
 
 /* Don't want the images to be any bigger than half the page. */
 .image-medium {
     max-width: 45%;
+}
+
+.red-theme {
+    background-color: red;
+}
+
+.blue-theme {
+    background-color: blue;
 }
 
 /* Need to tell the images to be 100% the size of their parent. */
