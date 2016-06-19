@@ -46,6 +46,17 @@ footer {
     float: left;
 }
 
+#daysComparison {
+    position: absolute;
+    bottom: 15%;
+    left: 33%;
+    background-color: black;
+    color: white;
+    height: 10%;
+    width: 33%;
+}
+
+
 #result {
     position: absolute;
     bottom: 5%;
