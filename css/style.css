@@ -23,6 +23,7 @@ footer {
     background-color: goldenrod;
     color:white;
     bottom:0;
+    height: 5%;
     position: absolute;
     width: 100%;
 }
@@ -45,21 +46,62 @@ footer {
     float: left;
 }
 
+#result {
+    position: absolute;
+    bottom: 5%;
+    left: 33%;
+    background-color: black;
+    color: white;
+    height: 10%;
+    width: 33%;
+}
+
 /* Don't want the images to be any bigger than half the page. */
 .image-medium {
     max-width: 45%;
 }
 
+
 .red-theme {
-    background-color: red;
+    background-image: url('../images/WengerWinning.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /*width: 100%;*/
+    background-color: rgba(255, 0, 0, 0.4);
+
 }
 
 .blue-theme {
-    background-color: blue;
+    background-size: 100%;
+    background-image: url('../images/EplMangersLosing.jpg');
+    background-repeat: repeat-y;
+    background-color: rgba(0, 0, 255, 0.4);
+}
+
+.extra-padding-bottom {
+    padding-bottom: 90%;
 }
 
 /* Need to tell the images to be 100% the size of their parent. */
 /* Their parent should be one of the image-* classes, e.g. image-medium. */
 img {
     max-width: 100%;
+}
+
+table {
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+thead  {
+    border-spacing: 0px;
+    padding-bottom:2px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    height: 100px;
 }

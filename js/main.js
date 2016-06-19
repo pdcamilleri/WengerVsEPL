@@ -76,12 +76,12 @@ window.onload = function() {
             club: "Tottenham Hotspur",
             startDate: "27-05-2014"
         }, {
-            name: "Who is managing them now?", // ???
+            name: "Who is this now?", // ???
             club: "Watford",
             startDate: "02-03-2011"
         }, {
             name: "Tony Pulis",
-            club: "West Bromwich Albion",
+            club: "W.B.A.",
             startDate: "01-01-2015"
         }, {
             name: "Slaven Bilić",
