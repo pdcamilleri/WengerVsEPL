@@ -110,19 +110,29 @@ window.onload = function() {
     var otherManagersTotalDaysEmployed = sumEmploymentLengths(otherManagers);
     var difference = wengerTotalDaysEmployed - otherManagersTotalDaysEmployed;
 
-    // TODO cleaner way to do this?
+    // Display the result
+    // TODO is there a cleaner way to do this?
     document.getElementById("otherManagersTable").innerHTML += getRowTemplate()({
         daysInCharge: otherManagersTotalDaysEmployed,
         name: 'total',
         club: ''
     });
+    document.getElementsByClassName("wengerDays")[0].innerHTML = wengerTotalDaysEmployed;
+    document.getElementsByClassName("otherManagersDays")[0].innerHTML = otherManagersTotalDaysEmployed;
+    // Also display how long until other managers catch up.
+    document.getElementById("daysUntilWengerLoses").innerHTML = Math.ceil(difference / 19);
+    //document.getElementById("daysUntilWengerLoses").parentElement.hidden = false;
 
-    // Display the result
+
     if (difference >= 0) {
         showWengerWinning();
     } else {
         showWengerLosing();
     }
+
+    //////////////////////
+    // Helper functions //
+    //////////////////////
 
     // Shows all of the given HTML elements.
     function showById() {
@@ -172,6 +182,7 @@ window.onload = function() {
 
     // Shows images and other html elements associated with a Wenger loss..
     function showWengerLosing() {
+        document.getElementById("winningText").innerHTML = "EPL Mangers Win!";
         showById("wengerLoses");
         showById("othersWin");
         hideById("wengerWins");
@@ -180,14 +191,11 @@ window.onload = function() {
 
     // Shows images and other html elements associated with a Wenger victory.
     function showWengerWinning() {
+        document.getElementById("winningText").innerHTML = "Wenger Wins!";
         showById("wengerWins");
         showById("othersLose");
         hideById("wengerLoses");
         hideById("othersWin");
-
-        // Also display how long until other managers catch up.
-        document.getElementById("daysUntilWengerLoses").innerHTML = Math.ceil(difference / 19);
-        document.getElementById("daysUntilWengerLoses").parentElement.hidden = false;
     }
 
 };

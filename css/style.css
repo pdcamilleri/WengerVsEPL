@@ -46,16 +46,23 @@ footer {
     float: left;
 }
 
-#daysComparison {
+.daysComparison {
     position: absolute;
     bottom: 15%;
-    left: 33%;
-    background-color: black;
+    background-color: grey;
     color: white;
     height: 10%;
     width: 33%;
 }
 
+#wengerDaysDisplay {
+    right: 50%;
+    text-align: right;
+}
+
+#otherManagersDisplay {
+    /*left: 0%;*/
+}
 
 #result {
     position: absolute;

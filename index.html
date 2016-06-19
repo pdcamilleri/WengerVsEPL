@@ -38,6 +38,13 @@
                     <!--<img id="wengerWins" src="images/WengerWinning.jpg">-->
                     <!--<img id="wengerLoses" hidden src="images/WengerLosing.jpg">-->
                 <!--</div>-->
+
+                <div class="center daysComparison" id="wengerDaysDisplay">
+                    <p>
+                        <span class="wengerDays"></span>
+                    </p>
+                </div>
+
             </div>
 
             <div class="right blue-theme">
@@ -63,24 +70,31 @@
                     <!--<img id="othersWin" hidden src="images/EplManagersWinning.jpg">-->
                     <!--<img id="othersLose" src="images/EplMangersLosing.jpg">-->
                 <!--</div>-->
+                <div class="center daysComparison" id="otherManagersDisplay">
+                    <p>
+                        vs. <span class="otherManagersDays"></span>
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="center" id="daysComparison">
-            <p>
-                $arseneDays vs. $eplDays
-            </p>
-        </div>
+        <!--<div class="center" id="daysComparison">-->
+            <!--<p>-->
+                <!--<span class="wengerDays"></span> vs. <span class="otherManagersDays"></span>-->
+            <!--</p>-->
+        <!--</div>-->
+
+
 
         <div class="center" id="result">
-            <p>
-                And the winner is <span>Arsene/EPL managers</span>
+            <p id="winningText">
+                <!-- set in js -->
             </p>
             <p>
             <!--<p hidden>-->
                 <!-- Display the total number of days each at the bottom, underneath the "result",
                 until epl managers catch up with arsene.-->
-                <span id="daysUntilWengerLoses">???</span> days until EPL managers catch up.
+                <span id="daysUntilWengerLoses"></span> days until EPL managers catch up.
             </p>
         </div>
 
