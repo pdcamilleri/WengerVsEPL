@@ -14,27 +14,31 @@ window.onload = function() {
         {
             name: "Eddie Howe",
             club: "AFC Bournemouth",
-            startDate: "12-10-2012"
+            startDate: "01-07-2016" // The year they were promoted to the EPL.
+            // startDate: "12-10-2012" // according to wikipedia link above.
         }, {
             name: "Sean Dyche",
             club: "Burnley",
-            startDate: "30-10-2012"
+            startDate: "01-07-2017" // promoted in 2016
+            //startDate: "30-10-2012"
         }, {
-            name: "Guus Hiddink",
+            name: "Antonio Conte",
             club: "Chelsea",
-            startDate: "19-12-2015"
+            startDate: "01-07-2016" // signed in April, but wont start till 16/17 season.
+            // could arguably make this the date that italy gets knocked out of euro 2016, final being 11 july.
         }, {
             name: "Alan Pardew",
             club: "Crystal Palace",
             startDate: "02-01-2015"
         }, {
-            name: "David Unsworth", // this is koeman now isnt it?
+            name: "Ronald Koeman",
             club: "Everton",
-            startDate: "12-05-2016"
+            startDate: "14-06-2016"
         }, {
             name: "Steve Bruce",
             club: "Hull City",
-            startDate: "08-06-2012"
+            startDate: "01-07-2016" // promoted in 2016
+            //startDate: "08-06-2012" // start date on wiki
         }, {
             name: "Claudio Ranieri",
             club: "Leicester City",
@@ -44,9 +48,10 @@ window.onload = function() {
             club: "Liverpool",
             startDate: "08-10-2015"
         }, {
-            name: "Manuel Pellegrini", // this is wrong
+            name: "Josep Guardiola",
             club: "Manchester City",
-            startDate: "14-06-2013"
+            startDate: "01-07-2016"
+            // signed in february, but didnt start till 16/17 season
         }, {
             name: "José Mourinho",
             club: "Manchester United",
@@ -54,11 +59,12 @@ window.onload = function() {
         }, {
             name: "Aitor Karanka",
             club: "Middlesbrough",
-            startDate: "13-11-2013"
+            startDate: "01-07-2016" // promoted in 2016
+            //startDate: "13-11-2013" // datae from wiki link above.
         }, {
-            name: "Ronald Koeman",
+            name: "No manager",
             club: "Southampton",
-            startDate: "16-06-2014"
+            startDate: "01-07-2016" // new manager incoming...
         }, {
             name: "Mark Hughes",
             club: "Stoke City",
@@ -76,9 +82,10 @@ window.onload = function() {
             club: "Tottenham Hotspur",
             startDate: "27-05-2014"
         }, {
-            name: "Who is this now?", // ???
+            name: "Walter Mazzarri",
             club: "Watford",
-            startDate: "02-03-2011"
+            startDate: "01-07-2016"
+            // signed for watford in may, contract with watford didnt start till july 1st.
         }, {
             name: "Tony Pulis",
             club: "W.B.A.",
